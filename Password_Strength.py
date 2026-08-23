@@ -58,17 +58,20 @@ while len(Password) < 12 or has_upper == False or has_digit == False or has_symb
             has_digit = False
             has_symbols = False
 #Score of Each Category
+#Add additional points for the Length of password greater than the Minimum
 Len_score = len(Password) - 12
 Upper_score=0
 Digit_score = 0
 Symbols_score =0
-
+#Add 1 Point for each Uppercase Letter in Password
 for Upper_char in Password:
     if Upper_char.isupper():
         Upper_score += 1
+#Add 1 Point for each Digit in Password
 for Digit in Password:
     if Digit.isdigit():
         Digit_score += 1
+#Add 1 Point for each Symbol in Password
 for Symbol in Password:
     if Symbol in symbols:
         Symbols_score += 1
