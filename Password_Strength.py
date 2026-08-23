@@ -1,4 +1,4 @@
-#Password Strength
+#Password Strength 
 has_upper =False
 has_digit =False
 has_symbols =False
